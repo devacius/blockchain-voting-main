@@ -35,7 +35,7 @@ const Vote = () => {
         deployedNetwork && deployedNetwork.address
       );
       setContractInstance(instance);
-      setAccount(accounts[0]);
+      setAccount(accounts[1]);
       setWeb3(web3);
     } catch (error) {
       console.log("Failed to load web3, accounts, or contract.");

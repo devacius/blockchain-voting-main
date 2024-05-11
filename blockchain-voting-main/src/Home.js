@@ -15,7 +15,7 @@ const Home = () => {
   const getData = async () => {
     try {
       setLoading(true);
-      const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
+      const web3 = new Web3(Web3.givenProvider || "ws://127.0.0.1:7545");
       const accounts = await web3.eth.getAccounts();
       console.table(accounts);
       const networkId = await web3.eth.net.getId();
